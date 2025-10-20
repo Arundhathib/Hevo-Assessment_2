@@ -14,7 +14,7 @@ It assumes you are running a Windows environment with Docker, PostgreSQL, and Sn
 - **Snowflake Account** (Trial or Corporate)
 - **Hevo Data Account** (Trial or Corporate)
 
-### ***Start PostgreSQL with Docker*
+### *Start PostgreSQL with Docker*
 ```
 docker run -d ^
   --name hevo_pg ^
@@ -29,7 +29,7 @@ Confirm the container is running:
 docker ps
 ```
 
-### Connect to PostgreSQL
+# Connect to PostgreSQL
 
 Access the PostgreSQL shell inside the container:
 ```
@@ -39,7 +39,7 @@ You should see:
 ```
 hevo_db=#
 ```
-###Create Database Schema and Load Data
+# Create Database Schema and Load Data
 
 Run the DDL scripts sequentially from the ddl_sql folder:
 ```
@@ -65,7 +65,7 @@ Check sample data:
 SELECT * FROM assignment2.customers_raw LIMIT 5;
 ```
 
-###Hevo Data Pipeline (Simulation)
+# Hevo Data Pipeline (Simulation)
 
 Due to tunneling restrictions from the local Docker environment, live Hevo → PostgreSQL connection could not be demonstrated.
 The following steps describe the intended configuration.
@@ -102,7 +102,7 @@ Provide account, warehouse, database, and schema details.
 
 Once validated, Hevo would replicate these tables into your Snowflake schema in real time.
 
-### Snowflake Transformations
+# Snowflake Transformations
 
 Open Snowflake → Worksheets and run:
 ```
@@ -155,7 +155,7 @@ SGD = 0.73
 
 EUR = 1.10
 
-###Troubleshooting
+# Troubleshooting
 
 a. Connection Refused
 Description: Container not running.
@@ -177,7 +177,7 @@ e. Port Conflict (5432 in use)
 Description: Existing PostgreSQL service using port 5432.
 Resolution: Stop local service or use -p 5433:5432.
 
-###Cleanup
+# Cleanup
 
 To stop and remove the PostgreSQL container:
 ```
@@ -185,7 +185,7 @@ docker stop hevo_pg
 docker rm hevo_pg
 ```
 
-###Author
+# Author
 
 Arundhathi Balaraj
 
