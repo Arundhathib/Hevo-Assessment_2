@@ -131,6 +131,9 @@ A Loom walkthrough could not be created because the live Hevo ↔ PostgreSQL tun
 Workaround:
 Instead of a video demo, all transformation logic and verification queries have been clearly documented in this repository.
 
+## 🎥 Loom Video
+Not recorded due to tunneling restrictions — full workflow and SQL logic documented above.
+
 ### Outcome
 
 Despite connectivity limitations, all functional objectives—data preparation, cleaning, transformation, and validation—were fully achieved and documented.
